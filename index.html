@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Drawing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <input type="color" id="colorPicker" value="#000000">
+    <input type="range" id="brushSize" min="1" max="20" value="5">
+    <button id="clearCanvas">Clear</button>
+    <button id="eraser">Eraser</button>
+    <button id="download">Download</button>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+    <label for="shapeSelect">Shape:</label>
+    <select id="shapeSelect">
+      <option value="freehand">Freehand</option>
+      <option value="line">Line</option>
+      <option value="rectangle">Rectangle</option>
+      <option value="circle">Circle</option>
+    </select>
+    <input type="color" id="backgroundColorPicker" value="#ffffff">
+  </div>
+  <canvas id="drawingCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
